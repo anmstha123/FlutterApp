@@ -71,7 +71,7 @@ class _InteractiveScreenState extends State<InteractiveScreen> {
               style: TextStyle(
                 fontSize: 26,
                 fontWeight: FontWeight.bold,
-                color: _isHighlighted ? Colors.deepOrange : Colors.black87,
+                color: _isHighlighted ? Colors.red : Colors.black87,
               ),
             ),
             const SizedBox(height: 12),

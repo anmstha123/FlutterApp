@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'gesture_screen.dart';
 import 'interactive_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -39,6 +40,19 @@ class HomeScreen extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => const InteractiveScreen(),
+                    ),
+                  );
+                },
+              ),
+              const SizedBox(height: 12),
+              ElevatedButton.icon(
+                icon: const Icon(Icons.touch_app),
+                label: const Text('Go to Gesture Screen'),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const GestureScreen(),
                     ),
                   );
                 },
